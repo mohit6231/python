@@ -102,3 +102,68 @@ for num in range(1, 10):
         count += 1
         print(num)
 print(f"We have {count} even numbers")
+
+
+def greet():
+    print("Hello")
+    print("World")
+
+
+greet()
+
+
+def greettest(fname, lname):
+    print(f"Hello {fname} {lname}")
+    print("World")
+
+
+greettest("mohit", "bansal")
+
+# By default, all functions return None value
+
+
+def greetdemo(fname, lname):
+    print(f"Hello {fname} {lname}")
+    print("World")
+
+
+print(greetdemo("mohit", "bansal"))
+
+
+def increment(num, by):
+    return num+by
+
+
+print(increment(2, by=1))
+
+
+def incrementarg(num, by=1):
+    return num+by
+
+
+print(incrementarg(2))
+
+
+def multiply(*nums):
+    return nums  # returns tuples, [2,3,4,5] - list
+
+
+print(multiply(2, 3, 4, 5))
+
+
+def save_user(**user):
+    print(user)  # returns dictionary
+
+
+save_user(id=1, name='mohit')
+
+message = 'a'
+
+
+def checkvar(name):
+    global message
+    message = 'b'
+
+
+checkvar('mohit')
+print(message)
