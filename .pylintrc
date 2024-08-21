@@ -1,0 +1,15 @@
+[MASTER]
+disable=
+    C0103, # uppercase naming style
+    C0114, # missing-module-docstring
+    C0116, # missing-function-docstring
+    W0621, # redefined-outer-name
+    W0612, # unused-variable
+    W0613, # unused argument
+    W0603, # global-statement
+    W0622, # redefined-outer-name
+    W1514, # unspecified encoding
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring
+    C0301, # line-too-long
+    E0401, # import-errror
